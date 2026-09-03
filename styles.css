@@ -12,6 +12,7 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
+  overflow-x: hidden;
   color: var(--ink);
   background: var(--paper);
   font-family: Arial, Helvetica, sans-serif;
@@ -341,28 +342,64 @@ footer p:last-child { text-align: right; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
 @media (max-width: 780px) {
-  .site-header { padding: 20px; }
+  .site-header { padding: 18px 20px; }
+  .wordmark { font-size: 1rem; }
+  nav { gap: 0; }
   nav a:first-child { display: none; }
+  .nav-contact { padding: 10px 11px; font-size: 0.66rem; }
   .hero { display: block; }
-  .hero-copy { min-height: 76vh; padding: 120px 20px 55px; }
-  h1 { font-size: clamp(4rem, 19vw, 6.2rem); }
-  .hero-media { min-height: 66vh; }
+  .hero-copy { min-height: 72svh; padding: 112px 20px 52px; }
+  .hero-copy .eyebrow { margin-bottom: 28px; }
+  h1 {
+    max-width: 100%;
+    margin-bottom: 28px;
+    font-size: clamp(3.35rem, 17vw, 4.4rem);
+    line-height: 0.88;
+    overflow-wrap: anywhere;
+  }
+  .intro { width: 100%; font-size: 0.98rem; line-height: 1.5; }
+  .hero-media { height: min(56.25vw, 280px); min-height: 0; }
+  .hero-media video { position: absolute; inset: 0; }
+  .signal { top: 18px; left: 18px; }
+  .media-label { right: 16px; bottom: 16px; }
   .statement, .experience, .contact { padding-left: 20px; padding-right: 20px; }
-  .statement { padding-top: 110px; padding-bottom: 110px; }
-  .statement p { font-size: clamp(3.2rem, 14vw, 5rem); }
-  .experience { padding-top: 90px; padding-bottom: 100px; }
+  .statement { padding-top: 82px; padding-bottom: 86px; }
+  .statement p { font-size: clamp(2.75rem, 13vw, 4.5rem); line-height: 0.98; }
+  .experience { padding-top: 78px; padding-bottom: 82px; }
   .section-heading { display: block; margin-bottom: 30px; }
   .section-heading .eyebrow { margin-bottom: 28px; }
-  .game-photo img { height: 68vh; }
-  .principles { grid-template-columns: 1fr; gap: 48px; margin-top: 70px; }
-  .principles h3 { margin-top: 26px; }
-  .art-section { grid-template-columns: 1fr; gap: 50px; padding: 90px 20px; }
+  .section-heading h2 { font-size: clamp(3.1rem, 15vw, 4.3rem); }
+  .game-photo img { height: 58svh; min-height: 430px; object-position: 54% center; }
+  .game-photo figcaption { gap: 24px; line-height: 1.35; }
+  .game-photo figcaption span { flex: 0 0 auto; }
+  .game-photo figcaption { text-align: right; }
+  .principles { grid-template-columns: 1fr; gap: 42px; margin-top: 58px; }
+  .principles h3 { margin-top: 24px; }
+  .art-section { grid-template-columns: 1fr; gap: 34px; padding: 78px 20px; }
   .art-heading { padding-right: 0; }
-  .art-heading h2 { font-size: clamp(3.3rem, 13vw, 5rem); }
-  .contact { min-height: 80vh; padding-top: 100px; padding-bottom: 100px; }
-  .contact h2 { font-size: clamp(3.3rem, 14vw, 5rem); }
+  .art-heading .eyebrow { margin-bottom: 28px; }
+  .art-heading h2 { font-size: clamp(3rem, 13vw, 4.25rem); overflow-wrap: anywhere; }
+  .art-heading > p:last-child { margin-top: 24px; }
+  .art-grid figcaption { gap: 20px; line-height: 1.35; text-align: right; }
+  .art-grid figcaption span { flex: 0 0 auto; }
+  .contact { min-height: auto; padding-top: 86px; padding-bottom: 82px; }
+  .contact .eyebrow { margin-bottom: 34px; }
+  .contact h2 { margin-bottom: 42px; font-size: clamp(3rem, 13vw, 4.25rem); overflow-wrap: anywhere; }
+  .contact-link { width: 100%; }
+  .email { font-size: 0.72rem; overflow-wrap: anywhere; }
+  .contact-mark { font-size: 62vw; bottom: -0.12em; }
   footer { grid-template-columns: 1fr 1fr; padding: 25px 20px; }
   footer p:nth-child(2) { display: none; }
+}
+
+@media (max-width: 350px) {
+  .site-header { padding-left: 16px; padding-right: 16px; }
+  .wordmark { font-size: 0.92rem; }
+  .nav-contact { padding: 9px; font-size: 0.61rem; }
+  .hero-copy, .statement, .experience, .art-section, .contact { padding-left: 16px; padding-right: 16px; }
+  h1 { font-size: clamp(3.05rem, 16.5vw, 3.55rem); }
+  .statement p { font-size: 12.5vw; }
+  .section-heading h2, .art-heading h2, .contact h2 { font-size: 12.5vw; }
 }
 
 @media (prefers-reduced-motion: reduce) {
