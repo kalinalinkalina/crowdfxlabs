@@ -184,6 +184,39 @@ h1 {
 
 .statement .accent { color: #527807; }
 
+.discovery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8vw;
+  padding: 9vw 3.5vw;
+  border-bottom: 1px solid var(--rule);
+}
+
+.discovery-heading .eyebrow { margin-bottom: 38px; }
+.discovery-heading h2 { font-size: clamp(3rem, 5.8vw, 6rem); }
+
+.discovery-copy { padding-top: 54px; }
+.discovery-lead {
+  max-width: 38rem;
+  margin-bottom: 56px;
+  font-size: clamp(1.25rem, 2vw, 1.8rem);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+}
+
+.answers { margin: 0; }
+.answers div {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.75fr) 1.25fr;
+  gap: 30px;
+  padding: 22px 0;
+  border-top: 1px solid var(--rule);
+}
+.answers div:last-child { border-bottom: 1px solid var(--rule); }
+.answers dt { font-size: 0.78rem; font-weight: 700; line-height: 1.45; }
+.answers dd { margin: 0; color: rgba(21, 21, 21, 0.7); font-size: 0.9rem; line-height: 1.55; }
+
 .experience { padding: 9vw 3.5vw 10vw; }
 
 .section-heading {
@@ -362,9 +395,15 @@ footer p:last-child { text-align: right; }
   .hero-media video { position: absolute; inset: 0; }
   .signal { top: 18px; left: 18px; }
   .media-label { right: 16px; bottom: 16px; }
-  .statement, .experience, .contact { padding-left: 20px; padding-right: 20px; }
+  .statement, .discovery, .experience, .contact { padding-left: 20px; padding-right: 20px; }
   .statement { padding-top: 82px; padding-bottom: 86px; }
   .statement p { font-size: clamp(2.75rem, 13vw, 4.5rem); line-height: 0.98; }
+  .discovery { grid-template-columns: 1fr; gap: 42px; padding-top: 78px; padding-bottom: 82px; }
+  .discovery-heading .eyebrow { margin-bottom: 28px; }
+  .discovery-heading h2 { font-size: clamp(3rem, 13vw, 4.25rem); }
+  .discovery-copy { padding-top: 0; }
+  .discovery-lead { margin-bottom: 42px; font-size: 1.2rem; }
+  .answers div { grid-template-columns: 1fr; gap: 8px; padding: 20px 0; }
   .experience { padding-top: 78px; padding-bottom: 82px; }
   .section-heading { display: block; margin-bottom: 30px; }
   .section-heading .eyebrow { margin-bottom: 28px; }
@@ -396,7 +435,7 @@ footer p:last-child { text-align: right; }
   .site-header { padding-left: 16px; padding-right: 16px; }
   .wordmark { font-size: 0.92rem; }
   .nav-contact { padding: 9px; font-size: 0.61rem; }
-  .hero-copy, .statement, .experience, .art-section, .contact { padding-left: 16px; padding-right: 16px; }
+  .hero-copy, .statement, .discovery, .experience, .art-section, .contact { padding-left: 16px; padding-right: 16px; }
   h1 { font-size: clamp(3.05rem, 16.5vw, 3.55rem); }
   .statement p { font-size: 12.5vw; }
   .section-heading h2, .art-heading h2, .contact h2 { font-size: 12.5vw; }
