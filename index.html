@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CrowdFXLabs creates interactive experiences that turn a crowd into part of the show."
+    />
+    <title>CrowdFXLabs — The crowd is the interface</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="CrowdFXLabs home">CrowdFX<span>Labs</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#experience">Experience</a>
+        <a href="#contact" class="nav-contact">Contact us <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Live audience interaction</p>
+          <h1 id="hero-title">The crowd<br />is the interface.</h1>
+          <p class="intro">
+            We create playful, real-time experiences that transform a room full of people
+            into one expressive, collective system.
+          </p>
+        </div>
+
+        <div class="hero-media reveal">
+          <video autoplay muted loop playsinline poster="assets/game.jpg" aria-label="CrowdFXLabs interactive crowd experience">
+            <source src="assets/demo-action-loop.mp4" type="video/mp4" />
+          </video>
+          <div class="media-label"><span>01</span> Live in action</div>
+          <div class="signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </section>
+
+      <section class="statement reveal" aria-label="What we do">
+        <p>One screen.</p>
+        <p>Hundreds of people.</p>
+        <p class="accent">A shared moment.</p>
+      </section>
+
+      <section class="experience" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> What it feels like</p>
+          <h2 id="experience-title">Play, together.</h2>
+        </div>
+
+        <figure class="game-photo reveal">
+          <img src="assets/game.jpg" alt="A large audience playing an interactive game together using the CrowdFXLabs system" />
+          <figcaption>
+            <span>02</span>
+            The room becomes the controller.
+          </figcaption>
+        </figure>
+
+        <div class="principles">
+          <article class="reveal">
+            <span class="number">01</span>
+            <h3>Instant</h3>
+            <p>No app download. No instruction manual. People join in and the room comes alive.</p>
+          </article>
+          <article class="reveal">
+            <span class="number">02</span>
+            <h3>Collective</h3>
+            <p>Every response matters. Individual inputs become one large-scale visual experience.</p>
+          </article>
+          <article class="reveal">
+            <span class="number">03</span>
+            <h3>Flexible</h3>
+            <p>Games, polling, art, and custom interactions—shaped to fit the audience and the moment.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="art-section" id="art" aria-labelledby="art-title">
+        <div class="art-heading reveal">
+          <p class="eyebrow light"><span></span> Beyond the game</p>
+          <h2 id="art-title">A canvas for<br />collective expression.</h2>
+          <p>
+            Audience input can become more than a response—it can become a living visual work.
+          </p>
+        </div>
+        <figure class="art-grid reveal">
+          <img src="assets/art.gif" alt="A moving grid of artistic screens created for CrowdFXLabs experiences" />
+          <figcaption><span>03</span> Art shaped by participation</figcaption>
+        </figure>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-inner reveal">
+          <p class="eyebrow light"><span></span> Start a conversation</p>
+          <h2 id="contact-title">Bring the crowd<br />into the experience.</h2>
+          <a class="contact-link" href="mailto:kalina.borkiewicz@acmsiggraph.org">
+            <span>Contact us</span><span aria-hidden="true">↗</span>
+          </a>
+          <p class="email">kalina.borkiewicz@acmsiggraph.org</p>
+        </div>
+        <div class="contact-mark" aria-hidden="true">FX</div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="wordmark" href="#top">CrowdFX<span>Labs</span></a>
+      <p>Interactive systems for collective experiences.</p>
+      <p>© <span id="year"></span> CrowdFXLabs</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
